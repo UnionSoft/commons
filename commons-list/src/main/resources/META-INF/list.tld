@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+    <description>List Tag Library</description>
+    <display-name>ListTagLib</display-name>
+    <tlib-version>1.0</tlib-version>
+    <short-name>lst</short-name>
+    <uri>http://www.unionsoft.nl/list/</uri>
+    <tag>
+        <name>paging</name>
+        <tag-class>
+            nl.unionsoft.common.list.taglib.PagingTag
+        </tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>listResponse</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>nl.unionsoft.common.list.model.ListResponse</type>
+        </attribute>
+		<attribute>
+            <name>queryString</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        
+    </tag>
+    
+      <tag>
+        <name>sort</name>
+        <tag-class>
+            nl.unionsoft.common.list.taglib.SortTag
+        </tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>listResponse</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>nl.unionsoft.common.list.model.ListResponse</type>
+        </attribute>
+        
+        <attribute>
+            <name>property</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+		<attribute>
+            <name>queryString</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        
+        
+    </tag>
+</taglib>
