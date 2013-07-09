@@ -2,3 +2,10 @@ commons-converter/.classpath
 commons-converter/.project
 commons-converter/.settings/org.eclipse.jdt.core.prefs
 *.versionsBackup
+commons-converter/target/
+commons-formatter/target/classes/nl/unionsoft/formatter/Formatter.class
+commons-formatter/target/classes/nl/unionsoft/formatter/FormatterConfig$FormatterScope.class
+commons-formatter/.classpath
+commons-formatter/.project
+commons-formatter/target/classes/nl/unionsoft/formatter/FormatterConfig.class
+commons-various/target/classes/nl/unionsoft/common/scheduling/MethodInvokingJobFactory$StatefulMethodInvokingJob.class
