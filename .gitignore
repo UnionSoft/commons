@@ -9,3 +9,11 @@ commons-formatter/.classpath
 commons-formatter/.project
 commons-formatter/target/classes/nl/unionsoft/formatter/FormatterConfig.class
 commons-various/target/classes/nl/unionsoft/common/scheduling/MethodInvokingJobFactory$StatefulMethodInvokingJob.class
+*.class
+commons-formatter/target/
+commons-list/target/
+commons-various/target/classes/nl/unionsoft/formatter/config.properties
+commons-various/target/classes/nl/unionsoft/formatter/spring/application-context.xml
+commons-various/target/test-classes/log4j.xml
+commons-list/.project
+commons-various/.project
