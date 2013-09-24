@@ -25,22 +25,22 @@ public class PagingTag extends TagSupport {
                 final String sortsUrl = renderSortsUrl();
                 final JspWriter out = pageContext.getOut();
                 out.print(renderLink(renderFirstUrl() + sortsUrl, "First", queryString));
-                out.println("||");
+                out.print("||");
                 out.print(renderLink(renderPreviousUrl() + sortsUrl, "Previous", queryString));
-                out.println("||");
+                out.print("||");
                 out.print(renderLink(renderNextUrl() + sortsUrl, "Next", queryString));
-                out.println("||");
+                out.print("||");
                 out.print(renderLink(renderLastUrl() + sortsUrl, "Last", queryString));
-                out.println("||");
+                out.print("||");
                 out.print(renderLink(renderPageSizeAllUrl() + sortsUrl, "All", queryString));
-                out.println("||");
+                out.print("||");
                 out.print(renderLink(renderPageSizeUrl(10) + sortsUrl, "10", queryString));
-                out.println("||");
+                out.print("||");
                 out.print(renderLink(renderPageSizeUrl(20) + sortsUrl, "20", queryString));
-                out.println("||");
+                out.print("||");
                 out.print(renderLink(renderPageSizeUrl(50) + sortsUrl, "50", queryString));
-                out.println("||");
-                out.println(renderLink(renderPageSizeUrl(100) + sortsUrl, "100", queryString));
+                out.print("||");
+                out.print(renderLink(renderPageSizeUrl(100) + sortsUrl, "100", queryString));
             } catch(final IOException ex) {
                 throw new IllegalStateException("Exception writing to JSP", ex);
             }

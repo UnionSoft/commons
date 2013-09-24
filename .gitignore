@@ -17,3 +17,10 @@ commons-various/target/classes/nl/unionsoft/formatter/spring/application-context
 commons-various/target/test-classes/log4j.xml
 commons-list/.project
 commons-various/.project
+commons-formatter/.settings/org.eclipse.jdt.core.prefs
+commons-list/.classpath
+commons-list/.settings/org.eclipse.jdt.core.prefs
+commons-various/.classpath
+commons-various/.settings/org.eclipse.jdt.core.prefs
+commons-various/target/classes/.gitignore
+commons-various/target/test-classes/.gitignore

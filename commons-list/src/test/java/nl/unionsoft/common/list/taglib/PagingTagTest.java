@@ -38,15 +38,15 @@ public class PagingTagTest {
         pagingTag.doStartTag();
         //@formatter:off
         final String expectedResults = 
-                "<a href=\"?maxResults=10&firstResult=0\">First</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">Previous</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=10\">Next</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=90\">Last</a>||\r\n" +
-                "<a href=\"?maxResults=0&firstResult=0\">All</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">10</a>||\r\n" +
-                "<a href=\"?maxResults=20&firstResult=0\">20</a>||\r\n" +
-                "<a href=\"?maxResults=50&firstResult=0\">50</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=0\">100</a>\r\n";
+                "<a href=\"?maxResults=10&firstResult=0\">First</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">Previous</a>||" +
+                "<a href=\"?maxResults=10&firstResult=10\">Next</a>||" +
+                "<a href=\"?maxResults=10&firstResult=90\">Last</a>||" +
+                "<a href=\"?maxResults=0&firstResult=0\">All</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">10</a>||" +
+                "<a href=\"?maxResults=20&firstResult=0\">20</a>||" +
+                "<a href=\"?maxResults=50&firstResult=0\">50</a>||" +
+                "<a href=\"?maxResults=100&firstResult=0\">100</a>";
         //@formatter:on
         Assert.assertEquals(expectedResults, stringBuilderWriter.toString());
     }
@@ -71,15 +71,15 @@ public class PagingTagTest {
         pagingTag.doStartTag();
         //@formatter:off
         final String expectedResults = 
-                "<a href=\"?maxResults=10&firstResult=0\">First</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">Previous</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">Next</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">Last</a>||\r\n" +
-                "<a href=\"?maxResults=0&firstResult=0\">All</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">10</a>||\r\n" +
-                "<a href=\"?maxResults=20&firstResult=0\">20</a>||\r\n" +
-                "<a href=\"?maxResults=50&firstResult=0\">50</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=0\">100</a>\r\n";
+                "<a href=\"?maxResults=10&firstResult=0\">First</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">Previous</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">Next</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">Last</a>||" +
+                "<a href=\"?maxResults=0&firstResult=0\">All</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">10</a>||" +
+                "<a href=\"?maxResults=20&firstResult=0\">20</a>||" +
+                "<a href=\"?maxResults=50&firstResult=0\">50</a>||" +
+                "<a href=\"?maxResults=100&firstResult=0\">100</a>";
         //@formatter:on
         Assert.assertEquals(expectedResults, stringBuilderWriter.toString());
     }
@@ -104,15 +104,15 @@ public class PagingTagTest {
         pagingTag.doStartTag();
         //@formatter:off
         final String expectedResults = 
-                "<a href=\"?maxResults=10&firstResult=0\">First</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">Previous</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">Next</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">Last</a>||\r\n" +
-                "<a href=\"?maxResults=0&firstResult=0\">All</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0\">10</a>||\r\n" +
-                "<a href=\"?maxResults=20&firstResult=0\">20</a>||\r\n" +
-                "<a href=\"?maxResults=50&firstResult=0\">50</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=0\">100</a>\r\n";
+                "<a href=\"?maxResults=10&firstResult=0\">First</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">Previous</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">Next</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">Last</a>||" +
+                "<a href=\"?maxResults=0&firstResult=0\">All</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0\">10</a>||" +
+                "<a href=\"?maxResults=20&firstResult=0\">20</a>||" +
+                "<a href=\"?maxResults=50&firstResult=0\">50</a>||" +
+                "<a href=\"?maxResults=100&firstResult=0\">100</a>";
         //@formatter:on
         Assert.assertEquals(expectedResults, stringBuilderWriter.toString());
     }
@@ -137,15 +137,15 @@ public class PagingTagTest {
         pagingTag.doStartTag();
         //@formatter:off
         final String expectedResults = 
-                "<a href=\"?maxResults=100&firstResult=0\">First</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=0\">Previous</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=140\">Next</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=150\">Last</a>||\r\n" +
-                "<a href=\"?maxResults=0&firstResult=0\">All</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=40\">10</a>||\r\n" +
-                "<a href=\"?maxResults=20&firstResult=40\">20</a>||\r\n" +
-                "<a href=\"?maxResults=50&firstResult=40\">50</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=40\">100</a>\r\n";
+                "<a href=\"?maxResults=100&firstResult=0\">First</a>||" +
+                "<a href=\"?maxResults=100&firstResult=0\">Previous</a>||" +
+                "<a href=\"?maxResults=100&firstResult=140\">Next</a>||" +
+                "<a href=\"?maxResults=100&firstResult=150\">Last</a>||" +
+                "<a href=\"?maxResults=0&firstResult=0\">All</a>||" +
+                "<a href=\"?maxResults=10&firstResult=40\">10</a>||" +
+                "<a href=\"?maxResults=20&firstResult=40\">20</a>||" +
+                "<a href=\"?maxResults=50&firstResult=40\">50</a>||" +
+                "<a href=\"?maxResults=100&firstResult=40\">100</a>";
         //@formatter:on
         Assert.assertEquals(expectedResults, stringBuilderWriter.toString());
     }
@@ -170,15 +170,15 @@ public class PagingTagTest {
         pagingTag.doStartTag();
         //@formatter:off
         final String expectedResults = 
-                "<a href=\"?maxResults=100&firstResult=0\">First</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=70\">Previous</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=150\">Next</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=150\">Last</a>||\r\n" +
-                "<a href=\"?maxResults=0&firstResult=0\">All</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=170\">10</a>||\r\n" +
-                "<a href=\"?maxResults=20&firstResult=170\">20</a>||\r\n" +
-                "<a href=\"?maxResults=50&firstResult=170\">50</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=150\">100</a>\r\n";
+                "<a href=\"?maxResults=100&firstResult=0\">First</a>||" +
+                "<a href=\"?maxResults=100&firstResult=70\">Previous</a>||" +
+                "<a href=\"?maxResults=100&firstResult=150\">Next</a>||" +
+                "<a href=\"?maxResults=100&firstResult=150\">Last</a>||" +
+                "<a href=\"?maxResults=0&firstResult=0\">All</a>||" +
+                "<a href=\"?maxResults=10&firstResult=170\">10</a>||" +
+                "<a href=\"?maxResults=20&firstResult=170\">20</a>||" +
+                "<a href=\"?maxResults=50&firstResult=170\">50</a>||" +
+                "<a href=\"?maxResults=100&firstResult=150\">100</a>";
         //@formatter:on
         Assert.assertEquals(expectedResults, stringBuilderWriter.toString());
     }
@@ -203,15 +203,15 @@ public class PagingTagTest {
         pagingTag.doStartTag();
         //@formatter:off
         final String expectedResults = 
-                "<a href=\"?maxResults=10&firstResult=0\">First</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=85\">Previous</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=90\">Next</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=90\">Last</a>||\r\n" +
-                "<a href=\"?maxResults=0&firstResult=0\">All</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=90\">10</a>||\r\n" +
-                "<a href=\"?maxResults=20&firstResult=80\">20</a>||\r\n" +
-                "<a href=\"?maxResults=50&firstResult=50\">50</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=0\">100</a>\r\n";
+                "<a href=\"?maxResults=10&firstResult=0\">First</a>||" +
+                "<a href=\"?maxResults=10&firstResult=85\">Previous</a>||" +
+                "<a href=\"?maxResults=10&firstResult=90\">Next</a>||" +
+                "<a href=\"?maxResults=10&firstResult=90\">Last</a>||" +
+                "<a href=\"?maxResults=0&firstResult=0\">All</a>||" +
+                "<a href=\"?maxResults=10&firstResult=90\">10</a>||" +
+                "<a href=\"?maxResults=20&firstResult=80\">20</a>||" +
+                "<a href=\"?maxResults=50&firstResult=50\">50</a>||" +
+                "<a href=\"?maxResults=100&firstResult=0\">100</a>";
         //@formatter:on
         Assert.assertEquals(expectedResults, stringBuilderWriter.toString());
     }
@@ -236,15 +236,15 @@ public class PagingTagTest {
         pagingTag.doStartTag();
         //@formatter:off
         final String expectedResults = 
-                "<a href=\"?maxResults=10&firstResult=0\">First</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=90\">Previous</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=90\">Next</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=90\">Last</a>||\r\n" +
-                "<a href=\"?maxResults=0&firstResult=0\">All</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=90\">10</a>||\r\n" +
-                "<a href=\"?maxResults=20&firstResult=80\">20</a>||\r\n" +
-                "<a href=\"?maxResults=50&firstResult=50\">50</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=0\">100</a>\r\n";
+                "<a href=\"?maxResults=10&firstResult=0\">First</a>||" +
+                "<a href=\"?maxResults=10&firstResult=90\">Previous</a>||" +
+                "<a href=\"?maxResults=10&firstResult=90\">Next</a>||" +
+                "<a href=\"?maxResults=10&firstResult=90\">Last</a>||" +
+                "<a href=\"?maxResults=0&firstResult=0\">All</a>||" +
+                "<a href=\"?maxResults=10&firstResult=90\">10</a>||" +
+                "<a href=\"?maxResults=20&firstResult=80\">20</a>||" +
+                "<a href=\"?maxResults=50&firstResult=50\">50</a>||" +
+                "<a href=\"?maxResults=100&firstResult=0\">100</a>";
         //@formatter:on
         Assert.assertEquals(expectedResults, stringBuilderWriter.toString());
     }
@@ -274,15 +274,15 @@ public class PagingTagTest {
         pagingTag.doStartTag();
         //@formatter:off
         final String expectedResults = 
-                "<a href=\"?maxResults=10&firstResult=0&sort=harry|ASC&sort=potter|DESC\">First</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0&sort=harry|ASC&sort=potter|DESC\">Previous</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=10&sort=harry|ASC&sort=potter|DESC\">Next</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=90&sort=harry|ASC&sort=potter|DESC\">Last</a>||\r\n" +
-                "<a href=\"?maxResults=0&firstResult=0&sort=harry|ASC&sort=potter|DESC\">All</a>||\r\n" +
-                "<a href=\"?maxResults=10&firstResult=0&sort=harry|ASC&sort=potter|DESC\">10</a>||\r\n" +
-                "<a href=\"?maxResults=20&firstResult=0&sort=harry|ASC&sort=potter|DESC\">20</a>||\r\n" +
-                "<a href=\"?maxResults=50&firstResult=0&sort=harry|ASC&sort=potter|DESC\">50</a>||\r\n" +
-                "<a href=\"?maxResults=100&firstResult=0&sort=harry|ASC&sort=potter|DESC\">100</a>\r\n";
+                "<a href=\"?maxResults=10&firstResult=0&sort=harry|ASC&sort=potter|DESC\">First</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0&sort=harry|ASC&sort=potter|DESC\">Previous</a>||" +
+                "<a href=\"?maxResults=10&firstResult=10&sort=harry|ASC&sort=potter|DESC\">Next</a>||" +
+                "<a href=\"?maxResults=10&firstResult=90&sort=harry|ASC&sort=potter|DESC\">Last</a>||" +
+                "<a href=\"?maxResults=0&firstResult=0&sort=harry|ASC&sort=potter|DESC\">All</a>||" +
+                "<a href=\"?maxResults=10&firstResult=0&sort=harry|ASC&sort=potter|DESC\">10</a>||" +
+                "<a href=\"?maxResults=20&firstResult=0&sort=harry|ASC&sort=potter|DESC\">20</a>||" +
+                "<a href=\"?maxResults=50&firstResult=0&sort=harry|ASC&sort=potter|DESC\">50</a>||" +
+                "<a href=\"?maxResults=100&firstResult=0&sort=harry|ASC&sort=potter|DESC\">100</a>";
         //@formatter:on
         Assert.assertEquals(expectedResults, stringBuilderWriter.toString());
     }
