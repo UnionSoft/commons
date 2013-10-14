@@ -24,3 +24,5 @@ commons-various/.classpath
 commons-various/.settings/org.eclipse.jdt.core.prefs
 commons-various/target/classes/.gitignore
 commons-various/target/test-classes/.gitignore
+commons-various/target/common-formatter-sources.jar
+commons-various/target/
