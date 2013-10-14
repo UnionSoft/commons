@@ -4,9 +4,11 @@ import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
@@ -46,7 +48,38 @@ public class ParamContextLogicImpl {
         return results;
     }
 
-    public void setBeanValues(final List<Context> contextList, final Object bean, final Map<String, Object> beanValues) {
+    public void setContextValues(Object bean, List<ContextValue> contextValues) {
+        for (ContextValue context : contextValues) {
+            setBeanValue(context, bean, context.getValue());
+        }
+    }
+
+    public List<ContextValue> getContextValues(Object bean) {
+        List<ContextValue> contextValues = new ArrayList<ContextValue>();
+        if (bean != null) {
+            List<Context> contexts = getContext(bean.getClass());
+            for (Context context : contexts) {
+                try {
+                    String value = BeanUtils.getProperty(bean, context.getId());
+                    ContextValue contextValue = new ContextValue();
+                    contextValue.setId(context.getId());
+                    contextValue.setTitle(context.getTitle());
+                    contextValue.setValue(value);
+                    contextValues.add(contextValue);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (InvocationTargetException e) {
+                    e.printStackTrace();
+                } catch (NoSuchMethodException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return contextValues;
+    }
+
+    public void setBeanValues(final List<Context> contextList, final Object bean, final Map<String, ? extends Object> beanValues) {
         for (Context context : contextList) {
             Object beanValue = beanValues.get(context.getId());
             setBeanValue(context, bean, beanValue);
@@ -75,7 +108,7 @@ public class ParamContextLogicImpl {
         }
     }
 
-    public void setBeanValues(final Object bean, final Map<String, Object> beanValues) {
+    public void setBeanValues(final Object bean, final Map<String, ? extends Object> beanValues) {
         if (bean != null) {
             List<Context> contextList = getContext(bean.getClass());
             setBeanValues(contextList, bean, beanValues);

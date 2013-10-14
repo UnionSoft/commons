@@ -14,7 +14,7 @@ public class ServerServiceImpl {
 
     private static final Logger LOG = LoggerFactory.getLogger(ServerServiceImpl.class);
     public static final String DEFAULT_HOST = "localhost";
-    public static final int DEFAULT_PORT = 4700;
+    public static final int DEFAULT_PORT = 8880;
     private String host;
     private Integer port;
     private final String contextPath;

@@ -30,12 +30,49 @@ public class ParamContextLogicTest {
     }
 
     @Test
+    public void testParamContextValuesResolver() {
+
+        ParamDto paramDto = new ParamDto();
+        paramDto.setSimpleStringValue("trol");
+        List<ContextValue> params = paramContextLogicImpl.getContextValues(paramDto);
+        Assert.assertEquals(1, params.size());
+        {
+            ContextValue context = params.get(0);
+            Assert.assertEquals("simpleStringValue", context.getId());
+            Assert.assertEquals("A simple String Value", context.getTitle());
+            Assert.assertEquals("trol", context.getValue());
+        }
+    }
+
+    @Test
     public void testSetValues() {
         Map<String, Object> valueMap = new HashMap<String, Object>();
         ParamDto paramDto = new ParamDto();
         valueMap.put("simpleStringValue", "helloWolrd");
         paramContextLogicImpl.setBeanValues(paramDto, valueMap);
         Assert.assertEquals("helloWolrd", paramDto.getSimpleStringValue());
+    }
+
+    @Test
+    public void testSetContextValues() {
+
+        ParamDto paramDto = new ParamDto();
+        {
+            paramDto.setSimpleStringValue("trol");
+            List<ContextValue> params = paramContextLogicImpl.getContextValues(paramDto);
+            params.get(0).setValue("test");
+            paramContextLogicImpl.setContextValues(paramDto, params);
+        }
+        {
+            List<ContextValue> params = paramContextLogicImpl.getContextValues(paramDto);
+            Assert.assertEquals(1, params.size());
+            {
+                ContextValue context = params.get(0);
+                Assert.assertEquals("simpleStringValue", context.getId());
+                Assert.assertEquals("A simple String Value", context.getTitle());
+                Assert.assertEquals("test", context.getValue());
+            }
+        }
     }
 
 }
