@@ -26,3 +26,9 @@ commons-various/target/classes/.gitignore
 commons-various/target/test-classes/.gitignore
 commons-various/target/common-formatter-sources.jar
 commons-various/target/
+pom.xml.releaseBackup
+release.properties
+commons-converter/pom.xml.releaseBackup
+commons-formatter/pom.xml.releaseBackup
+commons-list/pom.xml.releaseBackup
+commons-various/pom.xml.releaseBackup
