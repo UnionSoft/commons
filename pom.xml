@@ -3,7 +3,6 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.unionsoft.commons</groupId>
-	<packaging>pom</packaging>
 	<artifactId>commons</artifactId>
 	<version>1.3.8-SNAPSHOT</version>
 
@@ -15,13 +14,6 @@
         <tag>HEAD</tag>
     </scm>
 
-	<modules>
-		<!-- -->
-		<module>commons-converter</module>
-		<module>commons-list</module>
-		<module>commons-formatter</module>
-		<module>commons-various</module>
-	</modules>
 	<!-- START: META -->
 	<name>UnionSoft Commons</name>
 	<inceptionYear>2012</inceptionYear>
